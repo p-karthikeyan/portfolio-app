@@ -1,0 +1,62 @@
+{% load static %}
+.bodyy{
+	background-image: url(bgpic.jpg);
+	size:cover;
+}
+
+#transp-bg{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	background: none;
+	box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+
+	
+div{
+	background-color: #ccccb3;
+}
+h1,h2,p,li{
+	color: white;
+}
+.sb-btn{
+	margin: auto;
+	padding: auto;
+	background:none;
+	color: white;
+	text-align: center;
+	box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.65); 
+}
+#profile-wrapper{
+
+	text-align: center;
+}
+.hower:hover{
+	transform: scale(1.15);
+	transition: 2s;
+}
+
+#profile-pic{
+	width: 65%;
+	height: 70%;
+	border-radius: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow:  6px 2px 30px 0px rgba(0,0,0,0.85); 
+}
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.social-links ul,li{
+	padding-left: 20px; 
+	list-style-type: none;
+	display: inline-block;
+}
+
+.social{
+	width: 30px;
+	height: 30px;
+}
