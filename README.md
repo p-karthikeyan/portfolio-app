@@ -1,2 +1,2 @@
 # portfolio-app
-portfolio of my works
+Slightly updated my first website !
