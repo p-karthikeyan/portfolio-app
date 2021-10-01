@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+	<link href="{% static '/css/main.css' %}" rel="stylesheet"
+ type="text/css">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<meta charset="utf-8">
+	
+</head>
+<body style="background-image: url({% static 'images/contact-us-background.jpg' %});">
+	<center>
+		<br>
+		<h1>-- Contact Me --</h1>
+		<hr>
+	<div class="container" style="background: none;">
+	<div class="row" id="transp-bg">	
+		<div class="card card-body h-100 " id="transp-bg">
+			
+			<hr>
+			<p>Mail Me</p>
+			<form method="POST">
+		    {% csrf_token %}
+		    
+		    {{ form.as_p }}
+		    <button type="submit" class="sb-btn hower">Send</button>
+			</form>
+			<hr>
+			<br>
+			<p>Here-are-my-social-links</p>
+			<ul class="social-links">
+	                    <a href="https://github.com/p-karthikeyan" target="_blank"><li><img class="social hower" src="{% static '/images/25231.png'%}"></li></a>
+	                    <a href="https://www.instagram.com/_______404.______/" target="_blank"><li><img class="social hower" src="{% static '/images/174855.png'%}"></li></a>
+	                    <a href="https://www.facebook.com/pianist.karthik" target="_blank"><li><img class="social hower" style="width:40px;height:40px;" src="{% static '/images/fb.png'%}"></li></a>
+            </ul>
+		</div>
+	</div>
+</div>
+</center>
+</body>
+</html>

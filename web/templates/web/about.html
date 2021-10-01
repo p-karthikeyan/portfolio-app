@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+	<link href="{% static '/css/main.css' %}" rel="stylesheet"
+ type="text/css">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<meta charset="utf-8">
+	
+</head>
+<body style="background-image: url({% static 'images/contact-us-background.jpg' %});">
+	<center>
+		<br>
+	<div class="container" style="background: none;">
+	<div class="row" id="transp-bg">	
+		<div class="card card-body h-100 " id="transp-bg">
+			<h1>Thanks for contacting me..</h1>
+			<a href="{% url 'home' %}"><h4>click here for home</h4></a>
+		</div>
+	</div>
+</div>
+</center>
+</body>
+</html>
